@@ -19,6 +19,7 @@ app.use(cors())
 // routes
 app.use("/api/v1", require("./routes/contributeRoutes"));
 app.use("/users", require('./routes/userRoutes'));
+app.use("/collectors", require('./routes/collectorRoutes'));
 
 app.listen(PORT,()=>{
     console.log(`server running on ${PORT}`);
